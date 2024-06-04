@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Personal Number Validator";
+}
+
+<h2>Personal Number Validator</h2>
+
+<form method="post" asp-action="Validate">
+    <div>
+        <label for="personalNumber">Personal Number:</label>
+        <input type="text" id="personalNumber" name="personalNumber" required />
+    </div>
+    <div>
+        <label for="validationType">Validation Type:</label>
+        <select id="validationType" name="validationType">
+            <option value="Swedish">Swedish</option>
+            <option value="Finnish">Finnish</option>
+            <option value="Norwegian">Norway</option>
+        </select>
+    </div>
+    <button type="submit">Validate</button>
+</form>

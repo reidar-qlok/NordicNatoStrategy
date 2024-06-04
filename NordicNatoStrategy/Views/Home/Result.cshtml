@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Validation Result";
+    var isValid = (bool)Model;
+}
+
+<h2>Validation Result</h2>
+
+@if (isValid)
+{
+    <p>The personal number is valid.</p>
+}
+else
+{
+    <p>The personal number is not valid.</p>
+}
+
+<a href="/">Go back</a>
